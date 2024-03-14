@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link rel="stylesheet" href="03-todo.css">
+    </head>
+    <body>
+        <div class="container">
+            <p class="title">Todo List</p>
+            <div class="input-table">
+                <input "text" class="js-input css-input" placeholder="Your activity ...." maxlength="24">
+                <input type="date" class="js-date-input css-date-input">
+                <button class="js-add css-add" onclick="AddData();">Add</button>
+                <button class="css-delete-all" onclick="DeleteData();">Delete All</button>
+            </div>
+            <p class="title2">Your Tasks</p>
+            <div class="js-entered-data css-entered-data">
+
+            </div>
+        </div>
+        <script src="03-todo.js"></script>
+    </body>
+</html>
