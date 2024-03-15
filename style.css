@@ -30,6 +30,12 @@ button:active{
     gap: 10px;
 }
 
+.buttons{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100px 100px;
+}
+
 .css-input,
 .css-date-input{
     padding: 5px;
@@ -78,11 +84,17 @@ button:active{
 @media (max-width: 768px)
 {
     .container{
-        width: 400px;
-        padding-left: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
     }
     .input-table{
-        grid-template-columns: 250px 130px;
+        grid-template-columns: 250px ;
+    }
+    .buttons{
+        grid-template-columns: 120px 120px;
     }
     .css-add,
     .css-delete,
@@ -90,7 +102,7 @@ button:active{
         padding: 8px;
     }
     .elements{
-        grid-template-columns: 200px 90px 1fr ;
+        grid-template-columns: 160px 90px;
     }
     .css-delete{
         padding: 7px;
